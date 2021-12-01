@@ -1,5 +1,6 @@
 import React from "react";
 import Search from "../search/Search";
+import Songs from "../songs/Songs";
 import "./home.css";
 
 const Home = () => {
@@ -11,7 +12,10 @@ const Home = () => {
           <span>Search</span>
         </div>
       </div>
-      <Search />
+      <div>
+        <Search />
+      </div>
+      <Songs />
     </div>
   );
 };

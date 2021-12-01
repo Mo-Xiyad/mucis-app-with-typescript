@@ -1,0 +1,11 @@
+.recent-ply-card-img {
+  width: 100%;
+}
+
+img.recent-ply-card-img {
+  transition: 0.5s;
+}
+
+.card:hover img.recent-ply-card-img {
+  opacity: 0.8;
+}
