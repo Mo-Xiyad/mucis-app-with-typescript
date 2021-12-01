@@ -9,3 +9,16 @@ img.recent-ply-card-img {
 .card:hover img.recent-ply-card-img {
   opacity: 0.8;
 }
+.card-text-paragraph {
+  color: black;
+  font-size: 15px;
+  width: 180px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.card-text-paragraph > p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
