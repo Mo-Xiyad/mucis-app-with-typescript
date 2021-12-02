@@ -1,8 +1,10 @@
 import React from "react";
 import { Image } from "react-bootstrap";
+import { IAlbumData, IAlbums } from "../../types/albums";
 import "./songs.css";
 interface SearchComponentProps {
-  data: any;
+  data: IAlbumData;
+  // data: IAlbums; this works as well
 }
 
 const Songs = ({ data }: SearchComponentProps) => {

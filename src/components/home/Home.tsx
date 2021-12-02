@@ -1,28 +1,13 @@
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 import { Row } from "react-bootstrap";
-import { IAlbums } from "../../types/albums";
+import { IAlbumData } from "../../types/albums";
 import Search from "../search/Search";
 import Songs from "../songs/Songs";
 import "./home.css";
 
 const Home = () => {
-  const [albumData, setAlbumData] = useState<IAlbums[]>([]);
-
-  const dayOne = async () => {
-    try {
-      const response = await fetch(`https://adventofcode.com/2021/day/1/input`);
-      if (response.ok) {
-        let data = await response.json();
-        console.log(data);
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  useEffect(() => {
-    dayOne();
-  });
+  // const [albumData, setAlbumData] = useState<IAlbums>([]); // works the same since we are assigning IAlbumData to a variable called IAlbums
+  const [albumData, setAlbumData] = useState<IAlbumData[]>([]);
 
   return (
     <div className="container h-100">
